@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="经过这两三个星期的面试，大大小小的公司，被各路面试官教做人，找实习算是告一段落了，做个总结。 首先第一个星期是面了两三个小公司，就是那种技术人员在个位数，前端只有两三个人的那种，这种小公司一般面试不会问有难度问题，甚至只是问一些用过这么么，用过那个么，然后问一些基础概念就可以了，难度甚至没有达到刷一遍面经的程度。 第二个星期是面了一些中型公司，就是公司规模几百几千人，但不是互联网行业，或者是互联网">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/05/22/interview/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="经过这两三个星期的面试，大大小小的公司，被各路面试官教做人，找实习算是告一段落了，做个总结。 首先第一个星期是面了两三个小公司，就是那种技术人员在个位数，前端只有两三个人的那种，这种小公司一般面试不会问有难度问题，甚至只是问一些用过这么么，用过那个么，然后问一些基础概念就可以了，难度甚至没有达到刷一遍面经的程度。 第二个星期是面了一些中型公司，就是公司规模几百几千人，但不是互联网行业，或者是互联网">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-05-22T07:03:59.277Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="经过这两三个星期的面试，大大小小的公司，被各路面试官教做人，找实习算是告一段落了，做个总结。 首先第一个星期是面了两三个小公司，就是那种技术人员在个位数，前端只有两三个人的那种，这种小公司一般面试不会问有难度问题，甚至只是问一些用过这么么，用过那个么，然后问一些基础概念就可以了，难度甚至没有达到刷一遍面经的程度。 第二个星期是面了一些中型公司，就是公司规模几百几千人，但不是互联网行业，或者是互联网">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,118 +154,177 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-interview" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>经过这两三个星期的面试，大大小小的公司，被各路面试官教做人，找实习算是告一段落了，做个总结。</p>
+<p>首先第一个星期是面了两三个小公司，就是那种技术人员在个位数，前端只有两三个人的那种，这种小公司一般面试不会问有难度问题，甚至只是问一些用过这么么，用过那个么，然后问一些基础概念就可以了，难度甚至没有达到刷一遍面经的程度。</p>
+<p>第二个星期是面了一些中型公司，就是公司规模几百几千人，但不是互联网行业，或者是互联网行业里的中小型公司，一般没有听过名字的，这些公司问的问题就正式一些，比如vue的话，就会问到里面的具体使用，这类型的公司，问到原理的不多，问题也浅显，一般刷一遍面经就可以应付了。</p>
+<p>第三个星期的话，就是京东美团搜狐金山这些，听过名字的公司，这些大厂只刷面经是过不了的，要根据面经提到的知识点深入研究，比如</p>
+<ul>
+<li>0.1+0.2！=0.3，这个问题面经上能见到，但是为什么不等于呢？要答到这些吧</li>
+</ul>
+<blockquote>
+<p>js中的数字都是用浮点数表示的，并规定使用IEEE 754 标准的双精度浮点数表示。</p>
+</blockquote>
+<blockquote>
+<p>IEEE 754 规定了两种基本浮点格式：单精度和双精度。</p>
+</blockquote>
+<blockquote>
+<p>IEEE单精度格式具有24 位有效数字精度(包含符号号)，并总共占用32 位。</p>
+</blockquote>
+<blockquote>
+<p>IEEE双精度格式具有53 位有效数字精度(包含符号号)，并总共占用64 位。</p>
+</blockquote>
+<blockquote>
+<p>十进制0.1<br>=&gt; 二进制0.00011001100110011…(循环0011)<br>=&gt;尾数为1.1001100110011001100…1100（共52位，除了小数点左边的1），指数为-4（二进制移码为00000000010）,符号位为0<br>=&gt; 计算机存储为：0 00000000100 10011001100110011…11001<br>=&gt; 因为尾数最多52位，所以实际存储的值为0.00011001100110011001100110011001100110011001100110011001<br>而十进制0.2<br>=&gt; 二进制0.0011001100110011…(循环0011)<br>=&gt;尾数为1.1001100110011001100…1100（共52位，除了小数点左边的1），指数为-3（二进制移码为00000000011）,符号位为0<br>=&gt; 存储为：0 00000000011 10011001100110011…11001<br>因为尾数最多52位，所以实际存储的值为0.00110011001100110011001100110011001100110011001100110011<br>那么两者相加得：<br>0.00011001100110011001100110011001100110011001100110011001<br>0.00110011001100110011001100110011001100110011001100110011<br>= 0.01001100110011001100110011001100110011001100110011001100<br>转换成10进制之后得到:0.30000000000000004<br>当然答到这里面试官还会不会继续深入或者发散我就不知道了，因为。。我没答到这里呀，哭唧唧</p>
+</blockquote>
+<p><a href="https://www.zhihu.com/question/24415787/answer/57187211" target="_blank" rel="noopener">来自知乎，点我查看</a></p>
+<ul>
+<li>基本数据类型是什么，那==和===的区别，这个大家也知道，再然后，true为什么等于1？。。。<br>说到这里，我就不知道该怎么答了，运行代码true==1为true，true==2为false，false==0为true，<br>但是关于为什么这个问题，我没查到这方面的知识，有知道的朋友在评论里说一下呀。由于我答不出来了，这个问题就进行到这里了</li>
+</ul>
+<p>还有这些公司一般会问到框架原理的问题，如果只是用过框架，不知道原理，那一首凉凉送给自己</p>
+<p><b>面试官会说问这些是在考查候选人学习态度，学习习惯巴拉巴拉，但是我坚信不是我态度不好，只是我没找到学习方法和时间太短<em>(:з」∠)</em>加油喽</b></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/04/test-myBlog/" class="archive-article-date">
-  	<time datetime="2018-07-04T09:20:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-04</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/04/test-myBlog/">test_myBlog</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/05/22/interview/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/04/hello-world/" class="archive-article-date">
-  	<time datetime="2018-07-04T09:17:20.208Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-04</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2018/07/04/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/04/29/test/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/04/hello-world/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/05/22/interview/" class="archive-article-date">
-  	<time datetime="2018-05-22T07:03:59.277Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-22</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/29/test/" class="archive-article-date">
-  	<time datetime="2018-04-29T11:54:22.101Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-29</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -284,8 +347,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
